@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,12 +12,68 @@
     <!-- Font Awesome Link -->
     <script src="https://kit.fontawesome.com/647e5f1bce.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
-    <header>
-        <h1 class="">Javascript: MS Word</h1>
-    </header>
+    <section class="px-5 pt-5">
+        <h1 class="text-3xl font-semibold uppercase text-center mb-2">Javascript: MS Word</h1>
+            <div id="top-bar" class="w-full lg:w-9/12 mx-auto pb-3 border-2 border-b-0 rounded-b-none border-black bg-blue-200 rounded-t-lg grid sm:grid-cols-2 md:grid-cols-3 md:flex md:justify-evenly place-items-center">
+                <div id="left" class="flex m-3 mb-0 gap-2">
+                    <div id="bold-icon" class="bg-slate-100 w-fit py-1 px-3 rounded-md hover:bg-slate-500 hover:text-white cursor-pointer">
+                        <a href="#" class="font-bold text-xl">B</a>
+                        </div>
+                    <div id="italic-icon" class="bg-slate-100 w-fit py-2 px-3 rounded-md hover:bg-slate-500 hover:text-white cursor-pointer">
+                        <i class="fa-solid fa-italic"></i>
+                    </div>
+                    <div id="underline-icon" class="bg-slate-100 w-fit py-2 px-3 rounded-md hover:bg-slate-500 hover:text-white cursor-pointer">
+                        <i class="fa-solid fa-underline"></i>
+                    </div>
+                    <div id="case-icon" class="bg-slate-100 w-fit py-1 px-3 rounded-md hover:bg-slate-500 hover:text-white cursor-pointer">
+                        <a href="#" class="font-medium text-xl">Aa</a>
+                    </div>
+                </div>
+
+                <div id="mid" class="flex w-fit m-3 gap-2">
+                    <div id="text-align-left" class="bg-slate-100 w-fit py-2 px-3 rounded-md hover:bg-slate-500 hover:text-white cursor-pointer">
+                        <i class="fa-solid fa-align-left"></i>
+                    </div>
+                    <div id="text-align-right" class="bg-slate-100 w-fit  py-2 px-3 rounded-md hover:bg-slate-500 hover:text-white cursor-pointer">
+                        <i class="fa-solid fa-align-right"></i>
+                    </div>
+                    <div id="text-align-center" class="bg-slate-100 w-fit py-2 px-3 rounded-md hover:bg-slate-500 hover:text-white cursor-pointer">
+                        <i class="fa-solid fa-align-center"></i>
+                    </div>
+                    <div id="text-align-justify" class="bg-slate-100 w-fit py-2 px-3 rounded-md hover:bg-slate-500 hover:text-white cursor-pointer">
+                        <i class="fa-solid fa-align-justify"></i>
+                    </div>
+                </div>
+
+                <div id="right" class="flex gap-2 sm:w-0 md:w-fit">
+                    <select name="" id="option" class="border bg-slate-100 focus:bg-slate-500 focus:text-white font-medium text-lg py-2 px-0 text-center uppercase outline-0 focus:ring-2 rounded-lg">
+                        <option id="sans" value="sans-serif" class="font-medium text-lg font-sans">sans-serif</option>
+                        <option id="serif" value="cursive" class="font-medium text-lg ">cursive</option>
+                        <option id="mono" value="monospace" class="font-medium text-lg ">monospace</option>
+                        <option id="mono" value="fantasy" class="font-medium text-lg ">fantasy</option>
+
+                    </select>
+
+                    <input id="font-size" type="number" class="text-lg bg-slate-100 outline-none border text-center focus:bg-slate-500 focus:text-white focus:ring-2 rounded-lg" style="padding: 6px; width: 60px; padding-left: 5px;" value="18" placeholder="18">
+
+                    <div id="grow-font-size" class="bg-slate-100 hover:bg-slate-500 hover:text-white w-fit py-2 px-3 rounded-md cursor-pointer">
+                        <a href="#" class="font-medium text-xl">A</a>
+                    </div>
+                    <div id="shrink-font-size" class="bg-slate-100 w-fit py-2 px-3 rounded-md hover:bg-slate-500 hover:text-white cursor-pointer">
+                        <a href="#" class="font-medium text-xl" style="padding-left: 2px;">a</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="editor" class="w-full py-1 px-3 border-2 border-black rounded-b-lg lg:w-9/12 mx-auto" style="min-height: 450px;">
+                <textarea class="w-full outline-0 text-left" style="min-height:450px; font-size: 18px;" name="#" id="editor-text" placeholder="Copyright &copy; 2023 All right reserved - Md Mahfuz RP"></textarea>
+            </div>
+    </section>
 
     <!-- Javascript File link -->
     <script src="app.js"></script>
 </body>
+
 </html>
