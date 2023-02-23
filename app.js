@@ -284,3 +284,10 @@ shrinkFontSize.addEventListener('click', function(){
         fontSize.value = shrinkFontSizeNow;
     }
 })
+
+
+// Text Color change in Text Editor
+const textColor = document.getElementById('color');
+textColor.addEventListener('change', function(event){
+    myElement.style.color = event.target.value;
+})
